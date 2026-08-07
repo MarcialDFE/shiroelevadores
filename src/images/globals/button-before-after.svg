@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="299" viewBox="0 0 97 299">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff;opacity:.702}
+        </style>
+    </defs>
+    <g id="prefix__button" transform="translate(-371 -981.5)">
+        <path id="prefix__Linha_5" d="M0 0L0 299" data-name="Linha 5" transform="translate(419.5 981.5)" style="fill:none;stroke:#fff;stroke-width:5px"/>
+        <g id="prefix__Grupo_1" data-name="Grupo 1">
+            <path id="prefix__Polígono_1" d="M20 0l20 40H0z" class="prefix__cls-2" data-name="Polígono 1" transform="rotate(90 -322 790)"/>
+            <path id="prefix__Caminho_333" d="M20 0l20 40H0z" class="prefix__cls-2" data-name="Caminho 333" transform="rotate(-90 761.5 390.5)"/>
+        </g>
+    </g>
+</svg>
