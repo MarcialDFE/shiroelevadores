@@ -1,8 +1,9 @@
 import React from "react"
 
 import Layout from "../components/Layout";
-import SEO from "../components/seo"
-import TopBar from "../components/TopBar"
+import SEO from "../components/seo";
+import TopBar from "../components/TopBar";
+import Header from "../components/Header"
 
 const IndexPage = ({ data }) => {
 
@@ -16,6 +17,7 @@ const IndexPage = ({ data }) => {
         andress={"Rua Coronel Fawcett, 454 – Vila Morais – São Paulo-SP"}
         whatsapp={"(11) 94901-5967 / (11) 98763-9248"}
       />
+      <Header />
     </Layout>
   )
 };

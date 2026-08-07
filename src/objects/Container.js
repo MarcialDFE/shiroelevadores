@@ -8,6 +8,7 @@ const ContainerArea = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: yellow;
 `
 
 const Container = ({ children, className }) => {
