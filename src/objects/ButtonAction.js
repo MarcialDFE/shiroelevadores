@@ -73,7 +73,7 @@ const ActionButton = styled(Link)`
 
    }
    &.saibamais {
-      max-width: 125px;
+      max-width: 200px;
       background-color: ${props => props.theme.colors.secondyClear};
       border: 1px solid ${props => props.theme.colors.thirdMedium};
       transition: all 0.3s linear;
