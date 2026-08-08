@@ -38,7 +38,7 @@ const ItemTopbar = styled.div`
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   font-family: ${props => props.theme.fonts.secondy};
+   font-family: ${props => props.theme.fonts.family.secondy};
    font-weight: normal;
    font-size: ${props => props.theme.fonts.size.small};
    color: ${props => props.theme.colors.secondyDark};

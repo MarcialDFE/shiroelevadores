@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "../../foundation/breakPoints"
 
-import CardFull from "../CardFull"
+import CardSimple from "../CardSimple"
 
 const List = styled.ul`
    width: 100%;
@@ -10,33 +10,32 @@ const List = styled.ul`
    justify-content: space-between;
    align-items: center;
    margin: 0;
+   background-color: gray;
 
    ${media.lessThan("md")`
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-around;
    `}
 `
 
-const CardService = styled(CardFull)`
+const CardMember = styled(CardSimple)`
    position: relative;
-   width: 33.33%;
-   max-width: 290px;
-   height: 100%;
+   width: 50%;
+   max-width: 260px;
+   height: 360px;
+   background-color: aqua;
+   margin: 0;
 
-   ${media.lessThan("md")`
-      width: 50%;
-      margin: 0 10px;
+   ${media.lessThan("xs")`
+      width: 100%;
       &:not(:last-child) {
-         margin-bottom: 20px;
+         margin-bottom: 40px;
       }
    `}
-   ${media.lessThan("sm")`
-      width: 100%;
-      margin: 0 auto;
-   `}
+
 `
 
 export { 
    List,
-   CardService
+   CardMember
 }

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const SubtitleArea = styled.h4`
-  font-family: ${props => props.theme.fonts.primary};
+  font-family: ${props => props.theme.fonts.family.primary};
   font-size: ${props => props.theme.fonts.size.mediumSmall};
   font-weight: normal;
   text-transform: uppercase;

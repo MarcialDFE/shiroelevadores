@@ -2,9 +2,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import media from "../../foundation/breakPoints"
 import { FaChevronDown } from "react-icons/fa"
-
 import SocialLinks from "../../objects/SocialLinks"
-
 
 const MainNav = styled.nav`
    display: flex;
@@ -89,7 +87,7 @@ const IconSubAction = styled(FaChevronDown)`
 `
 
 const Action = styled(Link)`
-   font-family: ${props => props.theme.fonts.secondy};
+   font-family: ${props => props.theme.fonts.family.secondy};
    font-size: ${props => props.theme.fonts.size.medium};
    font-weight: normal;
    color: ${props => props.theme.colors.secondyDark};
@@ -129,7 +127,7 @@ const Action = styled(Link)`
 
 // SUBMENU
 const ActionSpan = styled.span`
-   font-family: ${props => props.theme.fonts.secondy};
+   font-family: ${props => props.theme.fonts.family.secondy};
    font-size: ${props => props.theme.fonts.size.medium};
    font-weight: normal;
    color: ${props => props.theme.colors.secondyDark};
@@ -216,7 +214,7 @@ const SubItem = styled.li`
 `
 
 const SubAction = styled(Link)`
-   font-family: ${props => props.theme.fonts.secondy};
+   font-family: ${props => props.theme.fonts.family.secondy};
    font-size: ${props => props.theme.fonts.size.mediumSmall};
    font-weight: normal;
    color: ${props => props.theme.colors.secondyDark};

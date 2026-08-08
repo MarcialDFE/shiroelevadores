@@ -64,7 +64,7 @@ const Content = styled.div`
 
 const Title = styled.h1`
    width: 50%;
-   font-family: ${props => props.theme.fonts.primary};
+   font-family: ${props => props.theme.fonts.family.primary};
    font-size: ${props => props.theme.fonts.size.big};
    color: ${props => props.theme.colors.secondyClear};
    text-transform: uppercase;
@@ -105,7 +105,7 @@ const Title = styled.h1`
 
 const Description = styled.p`
    width: 50%;
-   font-family: ${props => props.theme.fonts.secondy};
+   font-family: ${props => props.theme.fonts.family.secondy};
    font-size: ${props => props.theme.fonts.size.medium};
    color: ${props => props.theme.colors.secondyClear};
    line-height: 1.3;

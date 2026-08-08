@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const TitleArea = styled.h2`
-  font-family: ${props => props.theme.fonts.primary};
+  font-family: ${props => props.theme.fonts.family.primary};
   font-size: ${props => props.theme.fonts.size.big};
   font-weight: bold;
   color: ${props => props.theme.colors.firstDark};

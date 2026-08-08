@@ -16,7 +16,7 @@ const Content = styled.li`
 `
 
 const Title = styled.dt`
-  font-family: ${props => props.theme.fonts.secondy};
+  font-family: ${props => props.theme.fonts.family.secondy};
   color: ${props => props.theme.colors.secondyMedium};
   font-size: ${props => props.theme.fonts.size.mediumSmall};
   font-weight: 700;
@@ -38,7 +38,7 @@ const HeroImage = styled(Img)`
 `
 
 const Description = styled.dd`
-  font-family: ${props => props.theme.fonts.secondy};
+  font-family: ${props => props.theme.fonts.family.secondy};
   color: ${props => props.theme.colors.secondyMedium};
   font-size: ${props => props.theme.fonts.size.verySmall};
   line-height: 1.57em;

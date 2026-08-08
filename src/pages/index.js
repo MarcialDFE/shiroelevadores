@@ -6,13 +6,18 @@ import SEO from "../components/seo";
 import TopBar from "../components/TopBar";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
-
 import ServiceCards from "../components/ServiceCards"
 import TitleSection from "../objects/TitleSection"
 
+import MemberCards from "../components/MemberCards"
+import TextSection from "../objects/TextSection"
+
 import { 
   ServiceSection, 
-  ServiceContainer } from "./styles"
+  ServiceContainer,
+  TeamSection, 
+  TeamContainer,
+  WrapTeam } from "./styles"
 
 const dataJson = require("../data/data.json")
 const dataTopbar = dataJson.topbar
@@ -74,6 +79,20 @@ const IndexPage = () => {
           <ServiceCards />
         </ServiceContainer>
       </ServiceSection>
+      <TeamSection>
+        <TeamContainer>
+          <WrapTeam>
+            <TitleSection
+              title="Equipe"
+              subtitle="Nossos Especialistas"
+            />
+            <TextSection>
+              Nossa equipe é formada por profissionais com mais de 30 anos de experiência em usinagem, manutenção, recondicionamento, diagnósticos, com larga experiência industrial. No segmento de elevadores com destaque à montagens, manutenções mecânicas e usinagem em geral.
+            </TextSection>
+          </WrapTeam>
+          <MemberCards />
+        </TeamContainer>
+      </TeamSection>
 
     </Layout>
   )
