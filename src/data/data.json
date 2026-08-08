@@ -1,13 +1,10 @@
 {
-  "topbar": [
-    {
-      "andress": "Rua Coronel Fawcett, 454 – Vila Morais – São Paulo-SP",
-      "whatsapp": "(11) 94901-5967 / (11) 98763-9248"
-    }
-  ],
-  "banners": [
-    {
-      "id": "home",
+  "topbar": {
+    "andress": "Rua Coronel Fawcett, 454 – Vila Morais – São Paulo-SP",
+    "whatsapp": "(11) 94901-5967 / (11) 98763-9248"
+  },
+  "banners": {
+    "home": {
       "title": "Terceirização de Serviços de Elevadores",
       "description": "Venha construir uma parceria delegando a responsabilidade da sua área de manutenção mecânica para nossa equipe com vasta experiência na área, agregando eficiência, qualidade e rapidez a sua empresa.",
       "classButton": "saibamais",
@@ -15,7 +12,45 @@
       "imageFluid": "imgBanner",
       "imageAlt": "imagem de polia de tração de elevador"
     }
-  ],
+  },
+  "sectiontitles": {
+    "home": {
+      "sec1": {
+        "title": "Serviços",
+        "subtitle": "Conheça Nossos Serviços"
+      },
+      "sec2": {
+        "title": "Equipe",
+        "subtitle": "Nossos Especialistas"
+      },
+      "sec3": {
+        "title": "Portfólio",
+        "subtitle": "Alguns dos nossos serviços executados"
+      }
+    }
+  },
+  "cards": {
+    "home": {
+      "card1": {
+        "alt": "imagem de serviço de reparo mecânico em elevador",
+        "title": "Serviços de Reparos Mecânicos",
+        "description": "Recondicionamento de máquinas e motores de tração, limitadores de velocidade, alinhamento de guias…",
+        "action": "/ReparosMecanicos"
+      },
+      "card2": {
+        "alt": "imagem de serviço de retífica de polia de tração de elevador",
+        "title": "Retífica de Polia de Tração",
+        "description": "Correção nos desgastes dos canais das polias de tração com torno portátil direto na casa de máquinas.",
+        "action": "/RetificaPolias"
+      },
+      "card3": {
+        "alt": "imagem de serviço de usinagem para elevador",
+        "title": "Serviços de Usinagem em geral",
+        "description": "Nossos serviços de usinagem inclui fabricação, manutenção e recuperação de peças em geral.",
+        "action": "/Usinagem" 
+      }
+    }
+  },
   "destinations": [
     {
       "id": "1",

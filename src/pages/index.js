@@ -7,9 +7,17 @@ import TopBar from "../components/TopBar";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 
+import ServiceCards from "../components/ServiceCards"
+import TitleSection from "../objects/TitleSection"
+
+import { 
+  ServiceSection, 
+  ServiceContainer } from "./styles"
+
 const dataJson = require("../data/data.json")
 const dataTopbar = dataJson.topbar
 const dataBannerHome = dataJson.banners
+const dataTitle = dataJson.sectiontitles.home
 
 const IndexPage = () => {
 
@@ -45,18 +53,28 @@ const IndexPage = () => {
         title="Home"
       />
       <TopBar 
-        andress={dataTopbar[0].andress}
-        whatsapp={dataTopbar[0].whatsapp}
+        andress={dataTopbar.andress}
+        whatsapp={dataTopbar.whatsapp}
       />
       <Header />
       <Banner
-        title={dataBannerHome[0].title}
-        description={dataBannerHome[0].description}
-        action={dataBannerHome[0].action}
+        title={dataBannerHome.home.title}
+        description={dataBannerHome.home.description}
+        action={dataBannerHome.home.action}
         imageFluid={content.imgBanner.childImageSharp.fluid}
-        imageAlt={dataBannerHome[0].imageAlt}
-        classButton={dataBannerHome[0].classButton}
+        imageAlt={dataBannerHome.home.imageAlt}
+        classButton={dataBannerHome.home.classButton}
       />
+      <ServiceSection>
+        <ServiceContainer>
+          <TitleSection
+            title={dataTitle.sec1.title}
+            subtitle={dataTitle.sec1.subtitle}
+          />
+          <ServiceCards />
+        </ServiceContainer>
+      </ServiceSection>
+
     </Layout>
   )
 };

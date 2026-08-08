@@ -6,7 +6,7 @@ const SectionArea = styled.section`
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: red;
+background-color: red;
 `
 
 const Section = ({ children, className }) => {
