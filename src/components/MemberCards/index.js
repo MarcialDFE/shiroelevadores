@@ -5,9 +5,9 @@ import { List, CardMember } from "./styles"
 
 const MemberCards = ({ className }) => {
    
-   const skill1 = ["Sócio-Fundador", "Manutenção", "Montagem", "Usinagens"]
-   const skill2 = ["Sócio", "Manutenção", "Mecânica"]
-
+   const dataJson = require("../../data/data.json")
+   const dataMembers = dataJson.members
+ 
    const { member1, member2 } = useStaticQuery (
       graphql`
          query {
@@ -33,17 +33,17 @@ const MemberCards = ({ className }) => {
       <List className={className}>
          <CardMember
             fixed={member1.childImageSharp.fixed}
-            alt="foto de Mário Tamashiro"
-            name="Mário Tamashiro"
-            skills={skill1.map(item => {return <li>{item}</li>})}
-            contact="(11) 94901-5967"
+            alt={dataMembers.member1.alt}
+            name={dataMembers.member1.name}
+            skills={dataMembers.member1.skills.map(item => {return <li>{item}</li>})}
+            contact={dataMembers.member1.contact}
          />
          <CardMember
             fixed={member2.childImageSharp.fixed}
-            alt="foto de Felipe Tamashiro"
-            name="Felipe Tamashiro"
-            skills={skill2.map(item => {return <li>{item}</li>})}
-            contact="(11) 95065-4400"
+            alt={dataMembers.member2.alt}
+            name={dataMembers.member2.name}
+            skills={dataMembers.member2.skills.map(item => {return <li>{item}</li>})}
+            contact={dataMembers.member2.contact}
          />
       </List>
    ) 

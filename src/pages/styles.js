@@ -28,8 +28,10 @@ const TeamContainer = styled(Container)`
    justify-content: space-between;
    align-items: center;
    padding: 70px 0;
+   background-color: transparent;
 
-   ${media.lessThan("md")`
+
+   ${media.lessThan("1000px")`
       max-width: 600px;
       flex-direction: column;
    `}
@@ -41,8 +43,13 @@ const TeamContainer = styled(Container)`
 
 const WrapTeam = styled.div`
    width: 100%;
-   max-width: 400px;
+   max-width: 420px;
    padding: 25px 50px 25px 0;
+
+   ${media.lessThan("1000px")`
+      max-width: 600px;
+      flex-direction: column;
+   `}
 
    ${media.lessThan("md")`
       max-width: 100%;

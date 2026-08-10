@@ -51,6 +51,28 @@
       }
     }
   },
+  "members": {
+    "member1": {
+      "alt": "foto de Mário Tamashiro",
+      "name": "Mário Tamashiro",
+      "skills": [
+        "Sócio-Fundador", 
+        "Manutenção", 
+        "Montagem", 
+        "Usinagens"
+      ],
+      "contact": "(11) 94901-5967"
+    },
+    "member2": {
+      "alt": "foto de Felipe Tamashiro",
+      "name": "Felipe Tamashiro",
+      "skills": [
+        "Sócio", 
+        "Manutenção", 
+        "Mecâmica"      ],
+      "contact": "(11) 95065-4400"
+    }
+  },
   "destinations": [
     {
       "id": "1",

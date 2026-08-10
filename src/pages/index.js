@@ -83,8 +83,8 @@ const IndexPage = () => {
         <TeamContainer>
           <WrapTeam>
             <TitleSection
-              title="Equipe"
-              subtitle="Nossos Especialistas"
+              title={dataTitle.sec2.title}
+              subtitle={dataTitle.sec2.subtitle}
             />
             <TextSection>
               Nossa equipe é formada por profissionais com mais de 30 anos de experiência em usinagem, manutenção, recondicionamento, diagnósticos, com larga experiência industrial. No segmento de elevadores com destaque à montagens, manutenções mecânicas e usinagem em geral.

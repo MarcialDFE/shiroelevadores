@@ -13,7 +13,7 @@ const Text = styled.p`
    font-weight: normal;
    line-height: 1.56;
    color: ${props => props.theme.colors.secondyDark};
-   text-align: justify;
+   /* text-align: justify; */
    &.-inverse {
       color: ${props => props.theme.colors.secondyClear};
    }
