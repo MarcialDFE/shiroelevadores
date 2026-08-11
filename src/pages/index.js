@@ -8,16 +8,17 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ServiceCards from "../components/ServiceCards"
 import TitleSection from "../objects/TitleSection"
-
 import MemberCards from "../components/MemberCards"
 import TextSection from "../objects/TextSection"
+import PortfolioHome from "../components/PortfolioHome"
 
-import { 
-  ServiceSection, 
-  ServiceContainer,
-  TeamSection, 
-  TeamContainer,
-  WrapTeam } from "./styles"
+import { ServiceSection, 
+         ServiceContainer,
+         TeamSection, 
+         TeamContainer,
+         WrapTeam,
+         PortfolioSection,
+         PortfolioContainer } from "./styles"
 
 const dataJson = require("../data/data.json")
 const dataTopbar = dataJson.topbar
@@ -29,17 +30,6 @@ const IndexPage = () => {
   const content = useStaticQuery (
     graphql`
       query {
-        # imgPortfolio: allFile(filter: {relativeDirectory: {eq: "portfolio"}}) {
-        #   edges {
-        #     node {
-        #       childImageSharp {
-        #         sizes(maxHeight: 500) {
-        #           ...GatsbyImageSharpSizes
-        #         }
-        #       }
-        #     }
-        #   }
-        # }
         imgBanner: file(relativePath: { eq: "banner/banner-home.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1440) {
@@ -93,7 +83,16 @@ const IndexPage = () => {
           <MemberCards />
         </TeamContainer>
       </TeamSection>
-
+      <PortfolioSection>
+        <PortfolioContainer>
+          <TitleSection
+            className="-inverse"
+            title={dataTitle.sec3.title}
+            subtitle={dataTitle.sec3.subtitle}
+          />
+          <PortfolioHome />
+        </PortfolioContainer>
+      </PortfolioSection>
     </Layout>
   )
 };
