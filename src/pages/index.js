@@ -12,6 +12,8 @@ import MemberCards from "../components/MemberCards"
 import TextSection from "../objects/TextSection"
 import PortfolioHome from "../components/PortfolioHome"
 
+import Footer from "../components/Footer"
+
 import { ServiceSection, 
          ServiceContainer,
          TeamSection, 
@@ -93,6 +95,9 @@ const IndexPage = () => {
           <PortfolioHome />
         </PortfolioContainer>
       </PortfolioSection>
+
+      <Footer />
+
     </Layout>
   )
 };

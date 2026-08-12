@@ -21,13 +21,13 @@ const Icon = styled(FaFileAlt)`
    &.enviemensagem {
       display: none;
    }
-
 `
 
 const Label = styled.a`
+   width: 100%;
    font-family: ${props => props.theme.fonts.secondy};
    text-transform: uppercase;
-   font-size: ${props => props.theme.fonts.size.mediumSmall};
+   font-size: ${props => props.theme.fonts.size.small};
    font-weight: bold;
    &.orcamento {
       color: ${props => props.theme.colors.secondyClear};
@@ -43,10 +43,10 @@ const Label = styled.a`
       color: ${props => props.theme.colors.thirdMedium};
       transition: all 0.3s linear;
    }
-
 `
 
 const ActionButton = styled(Link)`
+   width: 250px;
    height: 40px;
    display: flex;
    justify-content: space-between;
@@ -55,6 +55,7 @@ const ActionButton = styled(Link)`
    padding: 0 15px;
    transition: all 0.3s linear;
    text-decoration: none;
+
    &.orcamento,
    &.enviemensagem {
       background-color: ${props => props.theme.colors.firstDark};
@@ -71,6 +72,9 @@ const ActionButton = styled(Link)`
          padding: 0 15px;
       `}
 
+   }
+   &.orcamento {
+      max-width: 180px;
    }
    &.saibamais {
       max-width: 140px;
@@ -92,12 +96,9 @@ const ActionButton = styled(Link)`
    &.hidden {
       display: none;
    }
-
 `
 
-
 const ButtonAction = ({ className="saibamais", label="Label", action, onClick }) => {
-  
    return (
       <ActionButton to={action} className={className} onClick={onClick}>
          <Icon className={className}/>
@@ -105,6 +106,5 @@ const ButtonAction = ({ className="saibamais", label="Label", action, onClick })
       </ActionButton>
    )
 }
-
 
 export default ButtonAction;

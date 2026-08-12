@@ -124,5 +124,14 @@
       "label": "Serviços de Usinagem",
       "alt": "imagem de serviços de usinagem da Shiro Usinagens"
     }
-  ]
+  ],
+  "footercontacts": {
+    "andress1": "Rua Coronel Fawcett, 454 – Vila Morais",
+    "andress2": "São Paulo-SP – CEP 04167-030",
+    "contact1": "(11) 94901-5967 – Mário",
+    "contact2": "(11) 95065-4400 – Felipe",
+    "email1": "mario@shirousinagens.com.br",
+    "email2": "contato@shirousinagens.com.br"
+  },
+  "footercopyright": "Shiro Elevadores. © Copyright 2026. Todos os direitos reservados."
 }

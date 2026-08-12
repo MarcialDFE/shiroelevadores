@@ -58,6 +58,8 @@ const WrapTeam = styled.div`
 `
 // PORTFOLIO HOME
 const PortfolioSection = styled(Section)`
+max-width: 1440px;
+
    padding: 70px 0 30px;
    /* background-color: ${props => props.theme.colors.secondyClear}; */
 background-color: green;
