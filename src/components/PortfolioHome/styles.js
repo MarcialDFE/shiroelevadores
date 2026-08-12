@@ -100,7 +100,7 @@ const WrapGlide = styled(Section)`
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   background-color: ${props => props.theme.colors.grayDark};
+   background-color: transparent;
    & * {
       box-sizing: inherit; 
    }
@@ -139,7 +139,7 @@ const BackgroundImage = styled(Img)`
    height: 250px; */
 width: auto;
 height: auto;
-max-height: 300px;
+max-height: 400px;
 
    /* ${media.greaterThan("sm")`
       height: auto;
@@ -229,6 +229,38 @@ const GlideSlide = styled.li`
 
 `
 
+const GlideBullets = styled.div`
+   bottom: 0;
+   width: 100%;
+   padding-top: 10px;
+   display: flex;
+   justify-content: center;
+   overflow: hidden; 
+`
+
+const GlideBullet = styled.button`
+   display: none;
+   width: 8px;
+   height: 8px;
+   border: none;
+   background-color: ${props => props.theme.colors.secondyLight};
+   opacity: 0.5;
+   border-radius: 50%;
+   margin: 0 5px;
+   outline: none;
+   padding: 5px;
+   cursor: pointer;
+   &:hover,
+   &.glide__bullet--active {
+      border: none;
+      opacity: 1;
+   }
+
+   ${media.greaterThan("sm")`
+      display: flex;
+   `}
+`
+
 export {
    WrapGlide,
    GlideTrack,
@@ -239,5 +271,7 @@ export {
    ContentOverlay,
    Title,
    SubTitle,
-   Description
+   Description,
+   GlideBullets,
+   GlideBullet 
 }

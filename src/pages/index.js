@@ -11,10 +11,11 @@ import TitleSection from "../objects/TitleSection"
 import MemberCards from "../components/MemberCards"
 import TextSection from "../objects/TextSection"
 import PortfolioHome from "../components/PortfolioHome"
-
 import Footer from "../components/Footer"
 
-import { ServiceSection, 
+import { BannerSection, 
+         BannerContainer,
+         ServiceSection, 
          ServiceContainer,
          TeamSection, 
          TeamContainer,
@@ -54,14 +55,18 @@ const IndexPage = () => {
         whatsapp={dataTopbar.whatsapp}
       />
       <Header />
-      <Banner
-        title={dataBannerHome.home.title}
-        description={dataBannerHome.home.description}
-        action={dataBannerHome.home.action}
-        imageFluid={content.imgBanner.childImageSharp.fluid}
-        imageAlt={dataBannerHome.home.imageAlt}
-        classButton={dataBannerHome.home.classButton}
-      />
+      <BannerSection>
+        <BannerContainer>
+          <Banner
+            title={dataBannerHome.home.title}
+            description={dataBannerHome.home.description}
+            action={dataBannerHome.home.action}
+            imageFluid={content.imgBanner.childImageSharp.fluid}
+            imageAlt={dataBannerHome.home.imageAlt}
+            classButton={dataBannerHome.home.classButton}
+          />
+        </BannerContainer>
+      </BannerSection>
       <ServiceSection>
         <ServiceContainer>
           <TitleSection
@@ -95,9 +100,7 @@ const IndexPage = () => {
           <PortfolioHome />
         </PortfolioContainer>
       </PortfolioSection>
-
       <Footer />
-
     </Layout>
   )
 };

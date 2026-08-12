@@ -3,26 +3,6 @@ import Img from "gatsby-image"
 
 import media from "../../foundation/breakPoints"
 
-const Section = styled.section`
-   width: 100%;
-`
-
-const Container = styled.div`
-   position: relative;
-   width: 100%;
-   max-width: 1440px;
-   height: auto;
-   margin: 0 auto;
-
-   ${media.lessThan("lg")`
-      height: 300px;
-   `}
-   ${media.lessThan("sm")`
-      height: 220px;
-   `}
-
-`
-
 const Overlay = styled.div`
    position: absolute;
    width: 100%;
@@ -153,8 +133,6 @@ const BkgImage = styled(Img)`
 
 `
 export {
-   Section,
-   Container,
    Overlay,
    Content,
    Title,

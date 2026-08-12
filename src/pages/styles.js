@@ -4,6 +4,26 @@ import media from "../foundation/breakPoints"
 import Section from "../objects/Section"
 import Container from "../objects/Container"
 
+// BANNER HOME
+const BannerSection = styled.section`
+   width: 100%;
+`
+    
+const BannerContainer = styled.div`
+   position: relative;
+   width: 100%;
+   max-width: 1440px;
+   height: auto;
+   margin: 0 auto;
+
+   ${media.lessThan("lg")`
+      height: 300px;
+   `}
+   ${media.lessThan("sm")`
+      height: 220px;
+   `}
+` 
+
 // SERVICE HOME
 const ServiceSection = styled(Section)`
    padding: 70px 0;
@@ -58,20 +78,21 @@ const WrapTeam = styled.div`
 `
 // PORTFOLIO HOME
 const PortfolioSection = styled(Section)`
-max-width: 1440px;
-
-   padding: 70px 0 30px;
-   /* background-color: ${props => props.theme.colors.secondyClear}; */
-background-color: green;
+   height: auto;
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 70px 0 90px 0;
+   background-color: ${props => props.theme.colors.firstDark};
 `
 
 const PortfolioContainer = styled(Container)`
-   /* background-color: ${props => props.theme.colors.secondyClear}; */
-background-color: red;
-display: block;
+   display: block;
+   background-color: transparent;
 `
 
 export { 
+   BannerSection,
+   BannerContainer,
    ServiceSection,
    ServiceContainer,
    TeamSection, 

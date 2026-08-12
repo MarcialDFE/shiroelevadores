@@ -78,7 +78,6 @@ const Sitemap = styled.div`
    ${media.lessThan("md")`
       display: none;
    `}
-
 `
 
 const ListItems = styled.ul`
@@ -120,14 +119,11 @@ const Service = styled.div`
    ${media.lessThan("xs")`
       width: 100%;
    `}
-
 `
 
 const ButtonFooter = styled(ButtonAction)`
-   width: 225px;
    text-align: center;
 `
-
 
 // COL3 = CONTATOS
 const Contact = styled.div`
@@ -149,7 +145,6 @@ const SocialLinksFooter = styled(SocialLinks)`
       margin: 30px 0 0 -5px;
       justify-content: center;
    `}
-
 `
 
 // BARRA RODAPÉ
@@ -170,7 +165,6 @@ const FooterBar = styled.div`
       height: 60px;
       padding: 0 40px;
    `}
-
 `
 
 export {

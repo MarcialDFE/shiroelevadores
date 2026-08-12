@@ -11,16 +11,23 @@ import { WrapGlide,
          ContentOverlay,
          Title,
          SubTitle,
-         Description } from "./styles"
+         Description,
+         GlideBullets,
+         GlideBullet } from "./styles"
 
 const options = {
    type: "carousel",
-   gap: 0,
+   gap: 10,
    startAt: 0,
-   perView: 1,
+   perView: 3,
    autoplay: 5000,
    hoverpause: true,
-   animationDuration: 1000
+   keyboard: true,
+   animationDuration: 1000,
+   breakpoints: {
+      992: { perView: 2 },
+      768: { perView: 1 },
+   }
 }
 
 const PortfolioHome = ({ element = "glide", children }) => {
@@ -80,6 +87,11 @@ const PortfolioHome = ({ element = "glide", children }) => {
                   </GlideSlide>
                ))}
             </GlideSlides>
+            <GlideBullets data-glide-el="controls[nav]">
+               {content.imgPortfolio.edges.map((slide, index) => (
+                  <GlideBullet key={index} data-glide-dir={`=${index}`}/>
+               ))}
+            </GlideBullets>
          </GlideTrack>
       </WrapGlide>
    ) 
