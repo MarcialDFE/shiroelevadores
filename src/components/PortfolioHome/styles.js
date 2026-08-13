@@ -5,51 +5,6 @@ import Img from "gatsby-image"
 import Section from "../../objects/Section"
 
 // OVERLAY
-const Title = styled.h1`
-   /* color: ${props => props.theme.colors.grayClear}; */
-color: yellow;
-   font-family: ${props => props.theme.fonts.primary};
-   font-size: ${props => props.theme.fonts.size.mediumSmall};
-   font-weight: 700;
-   margin-bottom: 0.5rem;
-   text-align: center;
-
-   ${media.greaterThan("sm")`
-      font-size: ${props => props.theme.fonts.size.medium};
-   `}
-
-   ${media.greaterThan("md")`
-      font-size: ${props => props.theme.fonts.size.mediumBig};
-   `}
-
-   ${media.greaterThan("lg")`
-      font-size: ${props => props.theme.fonts.size.big};
-   `}
-
-`
-
-const SubTitle = styled.h2`
-   /* color: ${props => props.theme.colors.grayLight}; */
-color: aqua;
-   font-family: ${props => props.theme.fonts.secondy};
-   text-transform: uppercase;
-   font-size: ${props => props.theme.fonts.size.verySmall};
-   font-weight: normal;
-   margin-bottom: 0.3rem;
-   text-align: center;
-   &-destaque {
-      font-weight: bold;    
-   }
-
-   ${media.greaterThan("md")`
-      font-size: ${props => props.theme.fonts.size.small};
-   `}
-
-   ${media.greaterThan("lg")`
-      font-size: ${props => props.theme.fonts.size.medium};
-   `}
-`
-
 const Description = styled.p`
    /* color: ${props => props.theme.colors.grayClear}; */
 color: bisque;
@@ -184,7 +139,7 @@ const GlideSlide = styled.li`
             ${ContentOverlay} {
                width: 60%;
                align-items: flex-start;
-               & ${Title}, ${SubTitle}, ${Description} {
+               &${Description} {
                   text-align: left;
                }
             }
@@ -228,6 +183,19 @@ const GlideSlide = styled.li`
    `}
 
 `
+const Legend = styled.small`
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   max-width: 390px;
+   margin-left: 1px;
+   text-align: center;
+   font-family: ${props => props.theme.fonts.secondy};
+   color: ${props => props.theme.colors.secondyClear};
+   font-size: ${props => props.theme.fonts.size.veryVerySmall};
+   background-color: rgba(0,0,0,0.5);
+   padding: 5px 0;
+`
 
 const GlideBullets = styled.div`
    bottom: 0;
@@ -269,9 +237,8 @@ export {
    BackgroundImage,
    WrapOverlay,
    ContentOverlay,
-   Title,
-   SubTitle,
    Description,
+   Legend,
    GlideBullets,
    GlideBullet 
 }

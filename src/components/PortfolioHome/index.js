@@ -7,11 +7,7 @@ import { WrapGlide,
          GlideSlides,
          GlideSlide,
          BackgroundImage,
-         WrapOverlay,
-         ContentOverlay,
-         Title,
-         SubTitle,
-         Description,
+         Legend,
          GlideBullets,
          GlideBullet } from "./styles"
 
@@ -29,6 +25,9 @@ const options = {
       768: { perView: 1 },
    }
 }
+
+const dataJson = require("../../data/data.json")
+const dataPortfolio = dataJson.portfolio
 
 const PortfolioHome = ({ element = "glide", children }) => {
 
@@ -67,23 +66,13 @@ const PortfolioHome = ({ element = "glide", children }) => {
                      key={index} 
                      className={`slider ${index === 1 ? "-variant" : ""}`}
                   >
-                     <WrapOverlay>
-                        <ContentOverlay>
-                           <Title>
-                              Titulo
-                           </Title>
-                           <SubTitle>
-                              Subtitulo
-                           </SubTitle>
-                           <Description>
-                              Descrição
-                           </Description>
-                        </ContentOverlay>
-                     </WrapOverlay>
                      <BackgroundImage 
                         fluid={slide.node.childImageSharp.fluid}
                         alt="alt da imagem"
                      />
+                     <Legend>
+                        {dataPortfolio[index].label}
+                     </Legend>
                   </GlideSlide>
                ))}
             </GlideSlides>
