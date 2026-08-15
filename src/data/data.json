@@ -75,6 +75,11 @@
   },
   "portfolio": [
     {
+      "id": "0",
+      "label": "Serviços de Usinagem",
+      "alt": "imagem de serviços de usinagem da Shiro Usinagens"
+    },
+    {
       "id": "1",
       "label": "Serviço de manutenção mecânica",
       "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
@@ -91,8 +96,8 @@
     },
     {
       "id": "4",
-      "label": "Serviço de manutenção mecânica",
-      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+      "label": "Serviço de manutenção de polia de tração",
+      "alt": "imagem de serviço de manutenção de polia de tração da Shiro Usinagens"
     },
     {
       "id": "5",
@@ -106,8 +111,8 @@
     },
     {
       "id": "7",
-      "label": "Serviço de manutenção de polia de tração",
-      "alt": "imagem de serviço de manutenção de polia de tração da Shiro Usinagens"
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
     },
     {
       "id": "8",
@@ -116,11 +121,6 @@
     },
     {
       "id": "9",
-      "label": "Serviços de Usinagem",
-      "alt": "imagem de serviços de usinagem da Shiro Usinagens"
-    },
-    {
-      "id": "10",
       "label": "Serviços de Usinagem",
       "alt": "imagem de serviços de usinagem da Shiro Usinagens"
     }

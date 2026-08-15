@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Shiro Elevadores | Website`,
+    title: `Shiro Elevadores`,
     description: `Terceirização especializada em manutenção e reparos em elevadores`,
     author: `Marcial Garcia`,
     siteUrl: `https://www.shiroelevadores.com.br`,
