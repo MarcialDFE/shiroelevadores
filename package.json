@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "netlify": "netlify"
   },
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
@@ -42,5 +43,8 @@
     "typeface-roboto": "^1.1.13",
     "typeface-ubuntu": "^1.1.13",
     "typography": "^0.16.21"
+  },
+  "devDependencies": {
+    "netlify-cli": "^9.16.6"
   }
 }
