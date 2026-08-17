@@ -46,7 +46,6 @@ const Label = styled.a`
 `
 
 const ActionButton = styled(Link)`
-   width: 100%;
    height: 40px;
    display: flex;
    justify-content: space-between;
@@ -70,9 +69,6 @@ const ActionButton = styled(Link)`
       ${media.lessThan("sm")`
          padding: 0 15px;
       `}
-   }
-   &.orcamento {
-      max-width: 175px;
    }
    &.enviemensagem {
       max-width: 260px;

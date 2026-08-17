@@ -31,6 +31,7 @@ const Container = styled.div`
    `}
    ${media.greaterThan("lg")`
       max-width: 1200px;
+      padding: 0;
    `}
 `
 
