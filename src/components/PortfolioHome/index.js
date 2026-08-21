@@ -28,8 +28,6 @@ const options = {
 
 const dataJson = require("../../data/data.json")
 const dataPortfolio = dataJson.portfolio
-let ind = 0
-let proxElement = dataPortfolio[ind + 1]
 
 const PortfolioHome = ({ element = "glide", children }) => {
 

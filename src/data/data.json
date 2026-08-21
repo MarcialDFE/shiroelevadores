@@ -18,6 +18,13 @@
       "classButton": "hidden",
       "imageFluid": "imgBanner",
       "imageAlt": "imagem da oficina da Shiro Elevadores"
+    },
+    "contact": {
+      "title": "Contatos",
+      "description": "Conheça nossos canais de contato por telefone, WhatsApp, e-mail, formulário de mensagem ou venha tomar um café conosco.",
+      "classButton": "hidden",
+      "imageFluid": "imgBanner",
+      "imageAlt": "imagem de polias de tração de elevador"
     }
   },
   "sectiontitles": {
