@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import media from "../../foundation/breakPoints"
-import { FaCheck } from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa"
 
 import Section from "../../objects/Section"
 import Container from "../../objects/Container"
 import TitleSection from "../../objects/TitleSection"
 import TextSection from "../../objects/TextSection"
-import MemberCards from "../../components/MemberCards"
 
-
-// BANNER ABOUT
+// BANNER CONTACT
 const BannerSection = styled.section`
    width: 100%;
 `
@@ -20,7 +18,6 @@ const BannerContainer = styled.div`
    max-width: 1440px;
    height: auto;
    margin: 0 auto;
-   background-color: transparent;
 
    ${media.lessThan("lg")`
       height: 300px;
@@ -30,11 +27,11 @@ const BannerContainer = styled.div`
    `}
 ` 
 
-// History Section
-const AboutContainer = styled(Container)`
+// SERVICES LIST SECTION
+const ServicesListContainer = styled(Container)`
    max-width: 1440px;
    justify-content: space-between;
-   background-color: ${props => props.theme.colors.secondyLight};
+   background-color: ${props => props.theme.colors.secondyClear};
 
    ${media.lessThan("md")`
       flex-direction: column;
@@ -42,11 +39,6 @@ const AboutContainer = styled(Container)`
       align-items: center;
    `}
 
-`
-
-// Differentials Section
-const DifferentialsContainer = styled(AboutContainer)`
-   background: ${props => props.theme.gradients.fourth};
 `
 
 const Side = styled.div`
@@ -88,7 +80,7 @@ const Side = styled.div`
 
 `
 
-const HistoryTitleSection = styled(TitleSection)`
+const ServicesTitleSection = styled(TitleSection)`
 
    ${media.lessThan("xl")`
       margin-bottom: 0;
@@ -96,7 +88,7 @@ const HistoryTitleSection = styled(TitleSection)`
 
 `
 
-const HistoryTextSection = styled(TextSection)`
+const ServicesTextSection = styled(TextSection)`
 
    ${media.lessThan("xl")`
       margin-top: 15px;
@@ -111,49 +103,90 @@ const HistoryTextSection = styled(TextSection)`
 
 `
 
-// DIFERENTTIALS
-const ListDifferentials = styled.ul`
+const ListServices = styled.ul`
    list-style: none;
    margin-left: 30px;
 `
 
-const ListIcon = styled(FaCheck)`
+const ListIcon = styled(FaArrowRight)`
    margin-right: -15px;
    transform: translateX(-25px);
    color: ${props => props.theme.colors.firstDark};
 `
 
-// TEAM
-const TeamContainer = styled(Container)`
+// BEFORE-AFTER SECTION
+const BeforeAfterSection = styled(Section)`
    max-width: 1440px;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background: ${props => props.theme.colors.secondyLight};
+   background: ${props => props.theme.gradients.primary};
+`
+
+const BeforeAfterContainer = styled(Container)`
+   max-width: 1200px;
+   justify-content: space-between;
+   background-color: transparent;
+   color: ${props => props.theme.colors.secondyClear};
    padding: 70px 0;
 
    ${media.lessThan("md")`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 0 0 70px;
    `}
 
 `
 
-const AboutTeam = styled(MemberCards)`
-   max-width: 700px;
+const SideComparison = styled(Side)`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+`
+
+const BeforeAfterTitleSection = styled(ServicesTitleSection)`
+   pointer-events: none;
+   user-select: none;
+`
+
+const BeforeAfterTextSection = styled(ServicesTextSection)`
+   pointer-events: none;
+   user-select: none;
+   color: ${props => props.theme.colors.secondyClear};
+`
+
+// PORTFOLIO REPAROS MECÂNICOS
+const PortfolioSection = styled(Section)`
+   max-width: 1440px;
+   background-color: ${props => props.theme.colors.secondyLight};
+   padding: 70px 0;
+   margin: 0 auto;
+`
+
+const PortfolioContainer = styled(Container)`
+   display: block;
+   max-width: 1200px;
+background-color: gray;
+`
+
+const GalleryContainer = styled(Container)`
+   /* background-color: transparent; */
+background-color: pink;
 `
 
 export {
-  BannerSection,
-  BannerContainer,
-  AboutContainer,
-  DifferentialsContainer,
-  Side,
-  HistoryTitleSection,
-  HistoryTextSection,
-  ListDifferentials,
-  ListIcon,
-  TeamContainer,
-  AboutTeam
-}
+   BannerSection,
+   BannerContainer,
+   ServicesListContainer,
+   Side,
+   ServicesTitleSection,
+   ServicesTextSection,
+   ListServices,
+   ListIcon,
+   BeforeAfterSection,
+   BeforeAfterContainer,
+   BeforeAfterTitleSection,
+   BeforeAfterTextSection,
+   SideComparison,
+   PortfolioSection,
+   PortfolioContainer,
+   GalleryContainer
+ }

@@ -19,6 +19,13 @@
       "imageFluid": "imgBanner",
       "imageAlt": "imagem da oficina da Shiro Elevadores"
     },
+    "mecanica": {
+      "title": "Reparos Mecânicos",
+      "description": "Serviços de reparos em máquinas de tração, motores, freios, limitadores de velocidade, cabos e polias e muito mais.",
+      "classButton": "hidden",
+      "imageFluid": "imgBanner",
+      "imageAlt": "imagem de motor de polia de tração de elevador"
+    },
     "contact": {
       "title": "Contatos",
       "description": "Conheça nossos canais de contato por telefone, WhatsApp, e-mail, formulário de mensagem ou venha tomar um café conosco.",
@@ -54,6 +61,20 @@
       "sec3": {
         "title": "Equipe",
         "subtitle": "Nossos Especialistas"
+      }
+    },
+    "mecanica": {
+      "sec1": {
+        "title": "Serviços",
+        "subtitle": "de Reparos Mecânicos"
+      },
+      "sec2": {
+        "title": "Antes e Depois",
+        "subtitle": "Exemplo de serviço"
+      },
+      "sec3": {
+        "title": "Galeria",
+        "subtitle": "Conheça nossos trabalhos"
       }
     }
   },
@@ -151,6 +172,68 @@
       "id": "9",
       "label": "Serviços de Usinagem",
       "alt": "imagem de serviços de usinagem da Shiro Usinagens"
+    }
+  ],
+  "portfoliomecanica": [
+    {
+      "id": "1",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "2",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "3",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "4",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "5",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "6",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "7",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "8",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "9",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "10",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "11",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
+    },
+    {
+      "id": "12",
+      "label": "Serviço de manutenção mecânica",
+      "alt": "imagem de serviço de manutenção mecânica da Shiro Usinagens"
     }
   ],
   "footercontacts": {

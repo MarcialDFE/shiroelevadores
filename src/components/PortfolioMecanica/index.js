@@ -27,27 +27,34 @@ const options = {
 }
 
 const dataJson = require("../../data/data.json")
-const dataPortfolio = dataJson.portfolio
+const dataPortfolio = dataJson.portfoliomecanica
 
-const PortfolioHome = ({ element = "glide", children }) => {
+const PortfolioMecanica = ({ element = "glide", children }) => {
 
    const content = useStaticQuery (
       graphql`
         query {
-          imgPortfolio: allFile (
-            filter: {relativeDirectory: { eq: "portfolio" }},
+         imgService: file(relativePath: { eq: "reparos-mecanicos.jpg" }) {
+               childImageSharp {
+               fluid(maxWidth: 1440) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+               }
+            }
+         }
+         imgPortfolio: allFile (
+            filter: {relativeDirectory: { eq: "portfolio-mecanica" }},
                sort: {order: ASC, fields: childImageSharp___fixed___originalName}) {
-              edges {
+               edges {
                   node {
-                    childImageSharp {
+                     childImageSharp {
                         fluid(maxWidth: 300) {
-                          ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid
                         }
-                    }
+                     }
                   }
-              }
-          }
-        }
+               }
+            }
+         }
       `
    )
   
@@ -70,9 +77,7 @@ const PortfolioHome = ({ element = "glide", children }) => {
                         fluid={slide.node.childImageSharp.fluid}
                         alt={dataPortfolio[index].alt}
                      />
-                     <Legend>
-                        {dataPortfolio[index].label}
-                     </Legend>
+                     <Legend>{dataPortfolio[index].label}</Legend>
                   </GlideSlide>
                ))}
             </GlideSlides>
@@ -86,4 +91,4 @@ const PortfolioHome = ({ element = "glide", children }) => {
    ) 
 }
 
-export default PortfolioHome
+export default PortfolioMecanica
