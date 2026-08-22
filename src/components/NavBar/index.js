@@ -27,7 +27,7 @@ const NavBar = ({ isActive=false, isShow=false, className, onClick }) => {
                         <SubAction to="/ReparosMecanicos">Reparos mecânicos</SubAction>
                      </SubItem>
                      <SubItem>
-                        <SubAction to="/RetificaPolias">Retífica de polias de tração</SubAction>
+                        <SubAction to="/RetificaPolias">Retífica de polias</SubAction>
                      </SubItem>
                      <SubItem>
                         <SubAction to="/Usinagem">Usinagens em geral</SubAction>

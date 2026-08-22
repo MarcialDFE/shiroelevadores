@@ -11,7 +11,7 @@ import TextSection from "../../objects/TextSection"
 const BannerSection = styled.section`
    width: 100%;
 `
-
+    
 const BannerContainer = styled.div`
    position: relative;
    width: 100%;
@@ -151,7 +151,7 @@ const BeforeAfterTextSection = styled(ServicesTextSection)`
    color: ${props => props.theme.colors.secondyClear};
 `
 
-// PORTFOLIO REPAROS MECÂNICOS
+// PORTFOLIO RETÍFICA DE POLIAS
 const PortfolioSection = styled(Section)`
    max-width: 1440px;
    background-color: ${props => props.theme.colors.secondyLight};

@@ -27,14 +27,14 @@ const options = {
 }
 
 const dataJson = require("../../data/data.json")
-const dataPortfolio = dataJson.portfoliomecanica
+const dataPortfolio = dataJson.portfoliopolia
 
-const PortfolioMecanica = ({ element = "glide", children }) => {
+const PortfolioPolia = ({ element = "glide", children }) => {
 
    const content = useStaticQuery (
       graphql`
         query {
-         imgService: file(relativePath: { eq: "reparos-mecanicos.jpg" }) {
+         imgService: file(relativePath: { eq: "retifica-polia.jpg" }) {
                childImageSharp {
                fluid(maxWidth: 1440) {
                   ...GatsbyImageSharpFluid_tracedSVG
@@ -91,4 +91,4 @@ const PortfolioMecanica = ({ element = "glide", children }) => {
    ) 
 }
 
-export default PortfolioMecanica
+export default PortfolioPolia

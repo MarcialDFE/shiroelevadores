@@ -26,58 +26,58 @@ import TopBar from "../../components/TopBar";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import TitleSection from "../../objects/TitleSection"
-import ComparisonServiceMechanical from "../../components/ImageComparison"
-import PortfolioMecanica from "../../components/PortfolioMecanica" 
+import ComparisonServicePolia from "../../components/ImageComparison"
+import PortfolioPolia from "../../components/PortfolioPolia" 
 import Footer from "../../components/Footer";
 
 const dataJson = require("../../data/data.json")
 const dataTopbar = dataJson.topbar
-const dataBannerRepMec = dataJson.banners
-const dataTitle = dataJson.sectiontitles.mecanica
+const dataBannerPolia = dataJson.banners
+const dataTitle = dataJson.sectiontitles.polia
 const dataLabels = dataJson.labels
 const dataMeasures = dataJson.measures
 
-const ReparosMecanicos = () => {
-   
+const RetificaPolias = () => {
+
    const images = useStaticQuery (
       graphql`
          query {
-            imgBanner: file(relativePath: { eq: "banner/banner-reparos-mecanicos.jpg" }) {
+            imgBanner: file(relativePath: { eq: "banner/banner-retifica-polia-tracao.jpg" }) {
                childImageSharp {
                   fluid(maxWidth: 1440) {
                      ...GatsbyImageSharpFluid_tracedSVG
                   }
                }
             }
-            imgService: file(relativePath: { eq: "reparos-mecanicos.jpg" }) {
+            imgService: file(relativePath: { eq: "retifica-polias.jpg" }) {
                childImageSharp {
                   fluid(maxWidth: 1440) {
                      ...GatsbyImageSharpFluid_tracedSVG
                   }
                }
             }
-            imgAfterLarge: file(relativePath: { eq: "comparison/reparo-mecanico-depois-large.jpg" }) {
+            imgAfterLarge: file(relativePath: { eq: "comparison/retifica-polia-depois-large.jpg" }) {
                childImageSharp {
                   fixed(width: 600) {
                      ...GatsbyImageSharpFixed_tracedSVG
                   }
                }
             }
-            imgBeforeLarge: file(relativePath: { eq: "comparison/reparo-mecanico-antes-large.jpg" }) {
+            imgBeforeLarge: file(relativePath: { eq: "comparison/retifica-polia-antes-large.jpg" }) {
                childImageSharp {
                   fixed(width: 600) {
                      ...GatsbyImageSharpFixed_tracedSVG
                   }
                }
             }
-            imgAfterSmall: file(relativePath: { eq: "comparison/reparo-mecanico-depois-small.jpg" }) {
+            imgAfterSmall: file(relativePath: { eq: "comparison/retifica-polia-depois-small.jpg" }) {
                childImageSharp {
                   fixed(width: 300) {
                      ...GatsbyImageSharpFixed_tracedSVG
                   }
                }
             }
-            imgBeforeSmall: file(relativePath: { eq: "comparison/reparo-mecanico-antes-small.jpg" }) {
+            imgBeforeSmall: file(relativePath: { eq: "comparison/retifica-polia-antes-small.jpg" }) {
                childImageSharp {
                   fixed(width: 300) {
                      ...GatsbyImageSharpFixed_tracedSVG
@@ -87,6 +87,7 @@ const ReparosMecanicos = () => {
          }
       `
    )
+
 
    let defaultWidth
    let smallImage = false
@@ -119,7 +120,7 @@ const ReparosMecanicos = () => {
 
    return (
       <Layout>
-         <SEO title="Reparos Mecânicos"/>
+         <SEO title="Retífica de Polias de Tração"/>
          <TopBar 
             andress={dataTopbar.andress}
             whatsapp={dataTopbar.whatsapp}
@@ -128,11 +129,11 @@ const ReparosMecanicos = () => {
          <BannerSection>
             <BannerContainer>
                <Banner
-                  title={dataBannerRepMec.mecanica.title}
-                  description={dataBannerRepMec.mecanica.description}
+                  title={dataBannerPolia.polia.title}
+                  description={dataBannerPolia.polia.description}
                   imageFluid={images.imgBanner.childImageSharp.fluid}
-                  imageAlt={dataBannerRepMec.mecanica.imageAlt}
-                  classButton={dataBannerRepMec.mecanica.classButton}
+                  imageAlt={dataBannerPolia.polia.imageAlt}
+                  classButton={dataBannerPolia.polia.classButton}
                />
             </BannerContainer>
          </BannerSection>
@@ -146,22 +147,16 @@ const ReparosMecanicos = () => {
                   <ServicesTextSection>
                      <ListServices>
                         <li><ListIcon />
-                           Troca de cabos e polias de tração. Instalação de novas máquinas;
+                           Torno portátil para retífica de polias de tração executada direto na casa de máquinas com a mesma qualidade do torno convencional;
                         </li>
                         <li><ListIcon />
-                           Máquinas de tração, motores, freios: eliminação de ruídos, vazamentos e ajustes de folgas;
+                           O processo de retífica é executado sem desmontagem e nem retirada das polias de tração diminuindo o tempo de execução;
                         </li>
                         <li><ListIcon />
-                           Limitador de velocidade: serviços de recondicionamento, aferição e trocas do conjunto;
+                           Com o torno portátil evitamos operações complexas de transporte de máquinas.
                         </li>
                         <li><ListIcon />
-                           Retífica da polia de tração, recondicionamento de polias, desvios e eixos;
-                        </li>
-                        <li><ListIcon />
-                           Alinhamento de guias, troca das corrediças, encurtamento, equalização de cabos de tração;
-                        </li>
-                        <li><ListIcon />
-                           Elevadores hidráulicos: reparo dos pistões e geral;
+                           Resolve o problema com a difícil remoção de polias grandes, principalmente em lugares apertados e pouco acessíveis;
                         </li>
                      </ListServices>
                   </ServicesTextSection>
@@ -169,7 +164,7 @@ const ReparosMecanicos = () => {
                <Side>
                   <Img 
                      fluid={images.imgService.childImageSharp.fluid}
-                     alt="imagem de serviços de reparo mecânico da Shiro Elevadores" 
+                     alt="imagem de serviço de retífica de polia de tração da Shiro Elevadores" 
                   />
                </Side>
             </ServicesListContainer>
@@ -177,13 +172,13 @@ const ReparosMecanicos = () => {
          <BeforeAfterSection>
             <BeforeAfterContainer>
                <SideComparison>
-                  <ComparisonServiceMechanical
+                  <ComparisonServicePolia
                      className=""
                      imgAfter={smallImage ? images.imgAfterSmall.childImageSharp.fixed : images.imgAfterLarge.childImageSharp.fixed}
-                     altAfter="imagem após o serviço de reparo mecânico"
+                     altAfter="imagem após o serviço de retífica de polia de tração"
                      labelAfter={dataLabels.after}
                      imgBefore={smallImage ? images.imgBeforeSmall.childImageSharp.fixed : images.imgBeforeLarge.childImageSharp.fixed}
-                     altBefore="imagem depois do serviço de reparo mecânico"
+                     altBefore="imagem antes do serviço de retífica de polia de tração"
                      labelBefore={dataLabels.before}
                      widthComponent={dataMeasures.width}
                      heightComponent={dataMeasures.height}
@@ -210,7 +205,7 @@ const ReparosMecanicos = () => {
                   subtitle={dataTitle.sec3.subtitle}
                />
                <GalleryContainer>
-                  <PortfolioMecanica />
+                  <PortfolioPolia />
                </GalleryContainer>
             </PortfolioContainer>
          </PortfolioSection>
@@ -219,4 +214,4 @@ const ReparosMecanicos = () => {
    )
 }
 
-export default ReparosMecanicos;
+export default RetificaPolias;
