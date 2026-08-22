@@ -5,13 +5,16 @@ import Img from "gatsby-image"
 import { 
    BannerSection,
    BannerContainer, 
+   AboutSection,
    AboutContainer,
    Side,
+   DifferentialsSection,
    DifferentialsContainer,
    HistoryTitleSection,
    HistoryTextSection,
    ListDifferentials,
    ListIcon,
+   TeamSection,
    TeamContainer,
    AboutTeam } from "./styles"
 
@@ -20,7 +23,6 @@ import SEO from "../../components/seo"
 import TopBar from "../../components/TopBar"
 import Header from "../../components/Header"
 import Banner from "../../components/Banner"
-import Section from "../../objects/Section"
 import TitleSection from "../../objects/TitleSection"
 import Footer from "../../components/Footer"
 
@@ -78,7 +80,7 @@ const AboutPage = () => {
                />
             </BannerContainer>
          </BannerSection>
-         <Section>
+         <AboutSection>
             <AboutContainer>
                <Side className="-content">
                   <HistoryTitleSection
@@ -97,8 +99,8 @@ const AboutPage = () => {
                   />
                </Side>               
             </AboutContainer>
-         </Section>
-         <Section>
+         </AboutSection>
+         <DifferentialsSection>
             <DifferentialsContainer>
                <Side>
                   <Img 
@@ -124,8 +126,8 @@ const AboutPage = () => {
                   </HistoryTextSection>
                </Side>
             </DifferentialsContainer>
-         </Section>
-         <Section>
+         </DifferentialsSection>
+         <TeamSection>
             <TeamContainer>
                <TitleSection
                   title={dataTitle.sec3.title}
@@ -133,7 +135,7 @@ const AboutPage = () => {
                />
                <AboutTeam />
             </TeamContainer>
-         </Section>
+         </TeamSection>
          <Footer />
       </Layout>
    )

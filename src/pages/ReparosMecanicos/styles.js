@@ -28,6 +28,10 @@ const BannerContainer = styled.div`
 ` 
 
 // SERVICES LIST SECTION
+const ServiceListection = styled(Section)`
+background-color: transparent;
+`
+
 const ServicesListContainer = styled(Container)`
    max-width: 1440px;
    justify-content: space-between;
@@ -38,7 +42,6 @@ const ServicesListContainer = styled(Container)`
       justify-content: center;
       align-items: center;
    `}
-
 `
 
 const Side = styled.div`
@@ -77,7 +80,6 @@ const Side = styled.div`
          padding: 50px 10px;
       }
    `}
-
 `
 
 const ServicesTitleSection = styled(TitleSection)`
@@ -85,7 +87,6 @@ const ServicesTitleSection = styled(TitleSection)`
    ${media.lessThan("xl")`
       margin-bottom: 0;
    `}
-
 `
 
 const ServicesTextSection = styled(TextSection)`
@@ -100,7 +101,6 @@ const ServicesTextSection = styled(TextSection)`
    ${media.lessThan("md")`
       line-height: 1.5;
    `}
-
 `
 
 const ListServices = styled.ul`
@@ -116,16 +116,15 @@ const ListIcon = styled(FaArrowRight)`
 
 // BEFORE-AFTER SECTION
 const BeforeAfterSection = styled(Section)`
-   max-width: 1440px;
-   background: ${props => props.theme.gradients.primary};
+background-color: transparent;
 `
 
 const BeforeAfterContainer = styled(Container)`
-   max-width: 1200px;
+   max-width: 1440px;
    justify-content: space-between;
-   background-color: transparent;
+   background: ${props => props.theme.gradients.primary};
    color: ${props => props.theme.colors.secondyClear};
-   padding: 70px 0;
+   padding: 70px;
 
    ${media.lessThan("md")`
       flex-direction: column;
@@ -133,7 +132,6 @@ const BeforeAfterContainer = styled(Container)`
       align-items: center;
       padding: 0 0 70px;
    `}
-
 `
 
 const SideComparison = styled(Side)`
@@ -164,17 +162,17 @@ const PortfolioSection = styled(Section)`
 const PortfolioContainer = styled(Container)`
    display: block;
    max-width: 1200px;
-background-color: gray;
+background-color: transparent;
 `
 
 const GalleryContainer = styled(Container)`
-   /* background-color: transparent; */
-background-color: pink;
+background-color: transparent;
 `
 
 export {
    BannerSection,
    BannerContainer,
+   ServiceListection,
    ServicesListContainer,
    Side,
    ServicesTitleSection,

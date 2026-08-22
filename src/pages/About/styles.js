@@ -20,7 +20,6 @@ const BannerContainer = styled.div`
    max-width: 1440px;
    height: auto;
    margin: 0 auto;
-   background-color: transparent;
 
    ${media.lessThan("lg")`
       height: 300px;
@@ -30,7 +29,11 @@ const BannerContainer = styled.div`
    `}
 ` 
 
-// History Section
+// HISTORY SECTION
+const AboutSection = styled(Section)`
+background-color: transparent;
+`
+
 const AboutContainer = styled(Container)`
    max-width: 1440px;
    justify-content: space-between;
@@ -44,7 +47,11 @@ const AboutContainer = styled(Container)`
 
 `
 
-// Differentials Section
+// DIFERENTIALS SECTION
+const DifferentialsSection = styled(Section)`
+background-color: transparent;
+`
+
 const DifferentialsContainer = styled(AboutContainer)`
    background: ${props => props.theme.gradients.fourth};
 `
@@ -85,7 +92,6 @@ const Side = styled.div`
          padding: 50px 10px;
       }
    `}
-
 `
 
 const HistoryTitleSection = styled(TitleSection)`
@@ -93,7 +99,6 @@ const HistoryTitleSection = styled(TitleSection)`
    ${media.lessThan("xl")`
       margin-bottom: 0;
    `}
-
 `
 
 const HistoryTextSection = styled(TextSection)`
@@ -124,6 +129,10 @@ const ListIcon = styled(FaCheck)`
 `
 
 // TEAM
+const TeamSection = styled(Section)`
+background-color: transparent;
+`
+
 const TeamContainer = styled(Container)`
    max-width: 1440px;
    flex-direction: column;
@@ -147,13 +156,16 @@ const AboutTeam = styled(MemberCards)`
 export {
   BannerSection,
   BannerContainer,
+  AboutSection,
   AboutContainer,
+  DifferentialsSection,
   DifferentialsContainer,
   Side,
   HistoryTitleSection,
   HistoryTextSection,
   ListDifferentials,
   ListIcon,
+  TeamSection,
   TeamContainer,
   AboutTeam
 }

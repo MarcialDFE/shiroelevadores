@@ -27,7 +27,7 @@ const BannerContainer = styled.div`
 // SERVICE HOME
 const ServiceSection = styled(Section)`
    padding: 70px 0;
-   background-color: transparent;
+background-color: transparent;
 `
 
 const ServiceContainer = styled(Container)`
@@ -48,8 +48,7 @@ const TeamContainer = styled(Container)`
    justify-content: space-between;
    align-items: center;
    padding: 70px 0;
-   background-color: transparent;
-
+background-color: transparent;
 
    ${media.lessThan("1000px")`
       max-width: 600px;
@@ -87,7 +86,7 @@ const PortfolioSection = styled(Section)`
 
 const PortfolioContainer = styled(Container)`
    display: block;
-   background-color: transparent;
+background-color: transparent;
 `
 
 export { 

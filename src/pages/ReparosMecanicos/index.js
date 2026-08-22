@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import { BannerSection,
          BannerContainer,
+         ServiceListection,
          ServicesListContainer,
          Side,
          ServicesTitleSection,
@@ -136,7 +137,7 @@ const ReparosMecanicos = () => {
                />
             </BannerContainer>
          </BannerSection>
-         <Section>
+         <ServiceListection>
             <ServicesListContainer>
                <Side className="-content">
                   <ServicesTitleSection
@@ -173,38 +174,36 @@ const ReparosMecanicos = () => {
                   />
                </Side>
             </ServicesListContainer>
-         </Section>
-         <Section>
-            <BeforeAfterSection>
-               <BeforeAfterContainer>
-                  <SideComparison>
-                     <ComparisonServiceMechanical
-                        className=""
-                        imgAfter={smallImage ? images.imgAfterSmall.childImageSharp.fixed : images.imgAfterLarge.childImageSharp.fixed}
-                        altAfter="imagem de depois"
-                        labelAfter={labels.after}
-                        imgBefore={smallImage ? images.imgBeforeSmall.childImageSharp.fixed : images.imgBeforeLarge.childImageSharp.fixed}
-                        altBefore="imagem de antes"
-                        labelBefore={labels.before}
-                        widthComponent={measures.width}
-                        heightComponent={measures.height}
-                        small={smallImage}
-                     />
-                  </SideComparison>
-                  <Side className="-content">
-                     <BeforeAfterTitleSection
-                        title={dataTitle.sec2.title}
-                        subtitle={dataTitle.sec2.subtitle}
-                        className="-inverse"
-                     />
-                     <BeforeAfterTextSection >
-                        <p>Exemplo do antes e depois em serviço de reparo no motor de tração realizado pela Shiro Usinagens.</p>
-                        <p>Foi trocado lorem ipsum lorem ipsum e ajustado lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
-                     </BeforeAfterTextSection>
-                  </Side>
-               </BeforeAfterContainer>
-            </BeforeAfterSection>
-         </Section>
+         </ServiceListection>
+         <BeforeAfterSection>
+            <BeforeAfterContainer>
+               <SideComparison>
+                  <ComparisonServiceMechanical
+                     className=""
+                     imgAfter={smallImage ? images.imgAfterSmall.childImageSharp.fixed : images.imgAfterLarge.childImageSharp.fixed}
+                     altAfter="imagem de depois"
+                     labelAfter={labels.after}
+                     imgBefore={smallImage ? images.imgBeforeSmall.childImageSharp.fixed : images.imgBeforeLarge.childImageSharp.fixed}
+                     altBefore="imagem de antes"
+                     labelBefore={labels.before}
+                     widthComponent={measures.width}
+                     heightComponent={measures.height}
+                     small={smallImage}
+                  />
+               </SideComparison>
+               <Side className="-content">
+                  <BeforeAfterTitleSection
+                     title={dataTitle.sec2.title}
+                     subtitle={dataTitle.sec2.subtitle}
+                     className="-inverse"
+                  />
+                  <BeforeAfterTextSection >
+                     <p>Exemplo do antes e depois em serviço de reparo no motor de tração realizado pela Shiro Usinagens.</p>
+                     <p>Foi trocado lorem ipsum lorem ipsum e ajustado lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                  </BeforeAfterTextSection>
+               </Side>
+            </BeforeAfterContainer>
+         </BeforeAfterSection>
          <PortfolioSection>
             <PortfolioContainer>
                <TitleSection
