@@ -20,14 +20,11 @@ import { BannerSection,
          PortfolioContainer,
          GalleryContainer } from "./styles";
 
-import { labels, measures, services } from "./content"
-
 import Layout from "../../components/Layout";
 import SEO from "../../components/seo";
 import TopBar from "../../components/TopBar";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
-import Section from "../../objects/Section";
 import TitleSection from "../../objects/TitleSection"
 import ComparisonServiceMechanical from "../../components/ImageComparison"
 import PortfolioMecanica from "../../components/PortfolioMecanica" 
@@ -37,6 +34,8 @@ const dataJson = require("../../data/data.json")
 const dataTopbar = dataJson.topbar
 const dataBannerRepMec = dataJson.banners
 const dataTitle = dataJson.sectiontitles.mecanica
+const dataLabels = dataJson.labels
+const dataMeasures = dataJson.measures
 
 const ReparosMecanicos = () => {
    
@@ -182,12 +181,12 @@ const ReparosMecanicos = () => {
                      className=""
                      imgAfter={smallImage ? images.imgAfterSmall.childImageSharp.fixed : images.imgAfterLarge.childImageSharp.fixed}
                      altAfter="imagem de depois"
-                     labelAfter={labels.after}
+                     labelAfter={dataLabels.after}
                      imgBefore={smallImage ? images.imgBeforeSmall.childImageSharp.fixed : images.imgBeforeLarge.childImageSharp.fixed}
                      altBefore="imagem de antes"
-                     labelBefore={labels.before}
-                     widthComponent={measures.width}
-                     heightComponent={measures.height}
+                     labelBefore={dataLabels.before}
+                     widthComponent={dataMeasures.width}
+                     heightComponent={dataMeasures.height}
                      small={smallImage}
                   />
                </SideComparison>
